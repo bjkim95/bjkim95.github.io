@@ -182,15 +182,25 @@ papertitle {
   margin-bottom: 8px;
 }
 
-/* Media (Video/Image) - Consistent Aspect Ratio */
+/* Media (Video/Image) - Preserve Natural Aspect Ratio */
+.paper-media {
+  width: 25%;
+  min-width: 200px;
+  vertical-align: middle;
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
 .paper-media video,
 .paper-media img {
   width: 100%;
   max-width: 300px;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: 10px;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
   display: block;
+  margin: 0 auto;
 }
 
 /* Links - Subtle Modern Style */
