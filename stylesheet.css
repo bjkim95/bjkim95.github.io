@@ -184,8 +184,8 @@ papertitle {
 
 /* Media (Video/Image) - Preserve Natural Aspect Ratio */
 .paper-media {
-  width: 25%;
-  min-width: 200px;
+  width: 35%;
+  min-width: 250px;
   vertical-align: middle;
   padding: 12px;
   background: #f9fafb;
@@ -195,8 +195,8 @@ papertitle {
 .paper-media video,
 .paper-media img {
   width: 100%;
-  max-width: 300px;
-  max-height: 200px;
+  max-width: 400px;
+  max-height: 280px;
   object-fit: contain;
   border-radius: 8px;
   display: block;
