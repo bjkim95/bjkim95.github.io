@@ -129,3 +129,143 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* ============================================
+   Modern Improvements (2025 Update)
+   ============================================ */
+
+/* Body & Background */
+body {
+  background: #fafafa;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* Section Headers */
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* Paper Cards - Modern Card Style */
+.paper-card {
+  margin: 20px 0;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.paper-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.paper-card td {
+  padding: 24px !important;
+}
+
+/* Paper Title - More Prominent */
+papertitle {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 1.4;
+  color: #111;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+/* Media (Video/Image) - Consistent Aspect Ratio */
+.paper-media video,
+.paper-media img {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Links - Subtle Modern Style */
+.paper-links {
+  margin-top: 8px;
+}
+
+.paper-links a {
+  display: inline-block;
+  padding: 4px 12px;
+  margin-right: 8px;
+  margin-bottom: 6px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 13px;
+  background: #f9fafb;
+  color: #1772d0;
+  transition: all 0.2s ease;
+}
+
+.paper-links a:hover {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1e40af;
+  text-decoration: none;
+}
+
+/* Conference Badge */
+.conference-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  background: #eff6ff;
+  color: #1e40af;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+/* News Items - Subtle Card Style */
+.news-item {
+  padding: 12px 16px;
+  margin: 8px 0;
+  background: #f9fafb;
+  border-left: 3px solid #1772d0;
+  border-radius: 4px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 0 16px;
+  }
+  
+  papertitle {
+    font-size: 16px !important;
+  }
+  
+  .paper-card td {
+    padding: 16px !important;
+  }
+  
+  .paper-media video,
+  .paper-media img {
+    max-width: 100%;
+  }
+  
+  .paper-links a {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-top: 32px;
+  }
+}
