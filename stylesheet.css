@@ -228,16 +228,41 @@ papertitle {
   text-decoration: none;
 }
 
-/* Conference Badge */
-.conference-badge {
+/* Paper Venue - Unified chip */
+.paper-venue {
   display: inline-block;
-  padding: 3px 10px;
-  background: #eff6ff;
-  color: #1e40af;
+  padding: 4px 11px;
+  margin-top: 8px;
+  margin-bottom: 6px;
+  border: 1px solid #e5e7eb;
   border-radius: 6px;
+  background: #f9fafb;
+  color: #374151;
   font-size: 12px;
   font-weight: 600;
-  margin-left: 8px;
+  line-height: 1.4;
+}
+
+.paper-venue__status {
+  margin-left: 4px;
+}
+
+.paper-venue--oral {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.paper-venue--oral .paper-venue__status {
+  color: #9f1239;
+}
+
+.paper-venue--highlight {
+  background: #fffbeb;
+  border-color: #fde68a;
+}
+
+.paper-venue--highlight .paper-venue__status {
+  color: #92400e;
 }
 
 /* News Items - Subtle Card Style */
@@ -258,7 +283,7 @@ papertitle {
   papertitle {
     font-size: 16px !important;
   }
-  
+
   .paper-card td {
     padding: 16px !important;
   }
